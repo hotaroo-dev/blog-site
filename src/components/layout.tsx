@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { Link } from 'gatsby'
 import {
   container,
@@ -10,7 +10,7 @@ import {
 
 interface Props {
   pageTitle: string
-  children: JSX.Element
+  children: ReactNode
 }
 
 const Layout: React.FC<Props> = ({ pageTitle, children }) => {
