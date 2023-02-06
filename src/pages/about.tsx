@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 import type { HeadFC } from 'gatsby'
 
 const About: React.FC = () => {
@@ -12,6 +13,6 @@ const About: React.FC = () => {
   )
 }
 
-export const Head: HeadFC = () => <title>About Me</title>
+export const Head: HeadFC = () => <Seo title="About Me" />
 
 export default About

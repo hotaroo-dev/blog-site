@@ -1,12 +1,14 @@
 import React, { ReactNode } from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
   container,
+  title,
   heading,
   navLinks,
   navLinkItem,
   navLinkText
 } from './layout.module.css'
+import useSiteMetadata from './use-siteMetadata'
 
 interface Props {
   pageTitle: string
@@ -14,8 +16,11 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({ pageTitle, children }) => {
+  const siteTitle = useSiteMetadata()
+
   return (
     <div className={container}>
+      <header className={title}>{siteTitle}</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -26,6 +31,11 @@ const Layout: React.FC<Props> = ({ pageTitle, children }) => {
           <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
               About
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/blog" className={navLinkText}>
+              Blog
             </Link>
           </li>
         </ul>

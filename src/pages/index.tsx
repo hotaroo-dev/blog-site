@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 import { StaticImage } from 'gatsby-plugin-image'
 import type { HeadFC } from 'gatsby'
 
@@ -12,6 +13,6 @@ const IndexPage: React.FC = () => {
   )
 }
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <Seo title="Home Page" />
 
 export default IndexPage

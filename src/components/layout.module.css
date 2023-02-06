@@ -4,6 +4,13 @@
   font-family: sans-serif;
 }
 
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: gray;
+  margin: 2rem 0;
+}
+
 .heading {
   color: rebeccapurple;
 }
