@@ -19,9 +19,7 @@ const config: GatsbyConfig = {
         path: `${__dirname}/blog`
       }
     },
-    {
-      resolve: 'gast'
-    }
+    'gatsby-plugin-mdx'
   ]
 }
 
