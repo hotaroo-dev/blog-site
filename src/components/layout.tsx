@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import {
   container,
   title,
